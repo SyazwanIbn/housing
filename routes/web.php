@@ -4,13 +4,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MasterDataDashboardController;
 use App\Http\Controllers\LamanUtamaController;
 use App\Http\Controllers\LanjutTempohDashboardController;
-use App\Http\Controllers\PenguatkuasaanController;
 use App\Http\Controllers\UnitSewaDashboardController;
 use App\Http\Controllers\UnitKedaiDashboardController;
 use App\Http\Controllers\TukarNamaDashboardController;
 use App\Http\Controllers\TukarUnitDashboardController;
 use App\Http\Controllers\TLKBDashboardController;
 use App\Http\Controllers\PenguatkuasaanDashboardController;
+use App\Http\Controllers\SenaraiHitamDashboardController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -30,4 +30,5 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/lanjut-tempoh',[LanjutTempohDashboardController::class, 'index'])->name('lanjut-tempoh.index');
     Route::get('/tlkb',[TLKBDashboardController::class, 'index'])->name('tlkb.index');
     Route::get('/penguatkuasaan',[PenguatkuasaanDashboardController::class, 'index'])->name('penguatkuasaan.index');
+    Route::get('/senarai-hitam',[SenaraiHitamDashboardController::class, 'index'])->name ('senarai-hitam.index');
 });
