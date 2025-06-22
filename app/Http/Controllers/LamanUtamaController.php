@@ -67,7 +67,7 @@ class LamanUtamaController extends Controller
         'title' => 'SENARAI HITAM',
         'icon' => 'landmark',
         'description' => 'Penyewa atau pemilik yang disenarai hitamkan daripada urusan lanjut.',
-        'route' => '#',
+        'route' => route('senarai-hitam.index'),
     ],
     [
         'title' => 'SEKATAN',

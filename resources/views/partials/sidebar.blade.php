@@ -75,9 +75,9 @@
             </a>
         </li>
 
-         <li class="{{ request()->is('master-data*') ? 'active' : '' }}">
-            <a href="#">
-                <span class="menu-icon"><i class="fas fa-database"></i></span>
+         <li class="{{ request()->is('dashboard/senarai-hitam') ? 'active' : '' }}">
+            <a href="{{ route('senarai-hitam.index')}}">
+                <span class="menu-icon"><i class="fas fa-landmark"></i></span>
                 <span>Senarai Hitam</span>
             </a>
         </li>
