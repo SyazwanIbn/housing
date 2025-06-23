@@ -79,13 +79,13 @@ class LamanUtamaController extends Controller
         'title' => 'BANCIAN',
         'icon' => 'clipboard',
         'description' => 'Pengurusan aktiviti bancian untuk unit atau kawasan tertentu.',
-        'route' => '#',
+        'route' => route('bancian.index'),
     ],
     [
         'title' => 'ONE STOP CENTRE',
         'icon' => 'bolt',
         'description' => 'Pusat sehenti bagi urusan berkaitan pembangunan dan teknikal.',
-        'route' => '#',
+        'route' => route('osc.index'),
     ],
     [
         'title' => 'PENYELENGGARAAN',

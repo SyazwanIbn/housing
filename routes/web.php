@@ -11,6 +11,8 @@ use App\Http\Controllers\TukarUnitDashboardController;
 use App\Http\Controllers\TLKBDashboardController;
 use App\Http\Controllers\PenguatkuasaanDashboardController;
 use App\Http\Controllers\SenaraiHitamDashboardController;
+use App\Http\Controllers\BancianDashboardController;
+use App\Http\Controllers\OneStopCenterController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -31,4 +33,6 @@ Route::prefix('dashboard')->group(function () {
     Route::get('/tlkb',[TLKBDashboardController::class, 'index'])->name('tlkb.index');
     Route::get('/penguatkuasaan',[PenguatkuasaanDashboardController::class, 'index'])->name('penguatkuasaan.index');
     Route::get('/senarai-hitam',[SenaraiHitamDashboardController::class, 'index'])->name ('senarai-hitam.index');
+    Route::get('/bancian', [BancianDashboardController::class, 'index'])->name('bancian.index');
+    Route::get('/osc', [OneStopCenterController::class, 'index'])->name('osc.index');
 });

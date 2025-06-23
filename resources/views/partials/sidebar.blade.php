@@ -89,16 +89,16 @@
             </a>
         </li>
 
-         <li class="{{ request()->is('master-data*') ? 'active' : '' }}">
-            <a href="#">
-                <span class="menu-icon"><i class="fas fa-database"></i></span>
+         <li class="{{ request()->is('dashboard/bancian') ? 'active' : '' }}">
+            <a href="{{ route('bancian.index')}}">
+                <span class="menu-icon"><i class="fas fa-clipboard"></i></span>
                 <span>Bancian</span>
             </a>
         </li>
 
-        <li class="{{ request()->is('master-data*') ? 'active' : '' }}">
-            <a href="#">
-                <span class="menu-icon"><i class="fas fa-database"></i></span>
+        <li class="{{ request()->is('dashboard/osc') ? 'active' : '' }}">
+            <a href="{{ route('osc.index')}}">
+                <span class="menu-icon"><i class="fas fa-bolt"></i></span>
                 <span>One Stop Centre</span>
             </a>
         </li>
