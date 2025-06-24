@@ -372,23 +372,39 @@
         <h5 class="section-title">Verifikasi & Tapisan</h5>
     </div>
 
-    <div class="summary-section">
-        <div class="stat-title">Semakan Verifikasi</div>
-        <div class="compact-stat">
-            <span class="compact-label">Penghuni Sub Sewa</span>
-            <span class="compact-value">{{ $verifikasi['penghuni_sub_sewa'] }}</span>
-        </div>
-        <div class="compact-stat">
-            <span class="compact-label">Penghuni Melebihi Kelayakan Gaji</span>
-            <span class="compact-value">{{ $verifikasi['penghuni_melebihi_kelayakan'] }}</span>
-        </div>
-        <div class="compact-stat">
-            <span class="compact-label">Penghuni Memohon Lebih Dari Satu Unit</span>
-            <span class="compact-value">{{ $verifikasi['penghuni_memohon_lebih_unit'] }}</span>
+    <div class="summary-section" style="margin-bottom: 1.5rem;">
+        <div class="stat-title" style="margin-bottom: 1rem;">Semakan Verifikasi</div>
+        <div class="summary-grid" style="gap: 0.7rem;">
+            <div class="summary-item" style="background: #f8f9fa;">
+                <div class="summary-label" style="font-size: 0.97rem;">Penghuni Sub Sewa</div>
+                <div class="summary-value" style="color: #e67e22;">{{ $verifikasi['penghuni_sub_sewa'] }}</div>
+            </div>
+            <div class="summary-item" style="background: #f8f9fa;">
+                <div class="summary-label" style="font-size: 0.97rem;">Melebihi Kelayakan Gaji</div>
+                <div class="summary-value" style="color: #e74c3c;">{{ $verifikasi['penghuni_melebihi_kelayakan'] }}</div>
+            </div>
+            <div class="summary-item" style="background: #f8f9fa;">
+                <div class="summary-label" style="font-size: 0.97rem;">Memohon Lebih Dari Satu Unit</div>
+                <div class="summary-value" style="color: #2980b9;">{{ $verifikasi['penghuni_memohon_lebih_unit'] }}</div>
+            </div>
         </div>
     </div>
 
-    <div class="section-header">
+    <div class="summary-section">
+        <div class="stat-title" style="margin-bottom: 1rem;">Tapisan Aduan</div>
+        <div class="summary-grid" style="gap: 0.7rem;">
+            <div class="summary-item" style="background: #f8f9fa;">
+                <div class="summary-label" style="font-size: 0.97rem;">Aduan Sah</div>
+                <div class="summary-value" style="color: #27ae60;">{{ $aduan['sah'] }}</div>
+            </div>
+            <div class="summary-item" style="background: #f8f9fa;">
+                <div class="summary-label" style="font-size: 0.97rem;">Aduan Batal</div>
+                <div class="summary-value" style="color: #c0392b;">{{ $aduan['batal'] }}</div>
+            </div>
+        </div>
+    </div>
+
+    {{-- <div class="section-header">
         <h5 class="section-title">Tapisan Aduan</h5>
     </div>
 
@@ -403,20 +419,20 @@
                 <div class="summary-value">{{ $aduan['batal'] }}</div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="section-header">
-        <h5 class="section-title">Pengurusan Kunci</h5>
+        <h5 class="section-title">Penyerahan dan Pemulangan Kunci</h5>
     </div>
 
     <div class="summary-section">
         <div class="summary-grid">
             <div class="summary-item">
-                <div class="summary-label">Serah Kunci Tamat Tempoh</div>
+                <div class="summary-label">Serah Kunci Tamat Sewa</div>
                 <div class="summary-value">{{ $pengurusan_kunci['serah_tamat_tempoh'] }}</div>
             </div>
             <div class="summary-item">
-                <div class="summary-label">Ambil Kunci Unit Sewa</div>
+                <div class="summary-label">Ambil Kunci Mula Sewa</div>
                 <div class="summary-value">{{ $pengurusan_kunci['ambil_sewa'] }}</div>
             </div>
             <div class="summary-item">
