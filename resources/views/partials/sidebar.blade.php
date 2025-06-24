@@ -103,9 +103,9 @@
             </a>
         </li>
 
-        <li class="{{ request()->is('master-data*') ? 'active' : '' }}">
-            <a href="#">
-                <span class="menu-icon"><i class="fas fa-database"></i></span>
+        <li class="{{ request()->is('dashboard/penyelenggaraan') ? 'active' : '' }}">
+            <a href="{{ route('penyelenggaraan.index') }}">
+                <span class="menu-icon"><i class="fas fa-tools"></i></span>
                 <span>Penyelenggaraan</span>
             </a>
         </li>

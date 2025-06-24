@@ -91,7 +91,7 @@ class LamanUtamaController extends Controller
         'title' => 'PENYELENGGARAAN',
         'icon' => 'tools',
         'description' => 'Laporan dan tindakan penyelenggaraan ke atas unit atau fasiliti.',
-        'route' => '#',
+        'route' => route('penyelenggaraan.index'),
     ],
     [
         'title' => 'PROJEK KECIL',
